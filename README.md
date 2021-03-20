@@ -1,0 +1,1 @@
+# redoc-lint-github-action
