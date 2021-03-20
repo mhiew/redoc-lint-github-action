@@ -1,0 +1,19 @@
+name: 'redoc-lint-github-action'
+
+description: 'Runs the Redocly Open API CLI lint over your open api document'
+
+branding:
+    icon: 'check'
+    color: 'purple'
+
+inputs:
+  args:
+    description: 'entrypoint and arguments to be provided to openapi lint'
+    required: true
+    default: "--help"
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
