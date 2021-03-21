@@ -13,6 +13,8 @@ This Github Action is a wrapper for [Redocly's Open API CLI](https://github.com/
 The entrypoint and other arguments to be provided to the openapi lint command.
 This is relative to your github workspace.
 
+If `args` is not specified it will default to `--help` to return a list of commands.
+
 ## Example Usage
 ```yaml
 jobs:
@@ -23,7 +25,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # then use redoc-cli-github-action to generate your HTML bundle
       - name: openapi-lint 
         uses: mhiew/redoc-lint-github-action@v1
         with:
