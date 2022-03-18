@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: openapi-lint 
-        uses: mhiew/redoc-lint-github-action@v2
+        uses: mhiew/redoc-lint-github-action@v3
         with:
           args: 'test/petstore.yml'
 ```
