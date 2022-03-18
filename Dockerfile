@@ -1,4 +1,4 @@
-FROM node:15.12.0-alpine3.10
+FROM node:17.7.1-alpine3.15
 
 LABEL "com.github.actions.name"="Redocly OpenAPI Lint Github Action"
 LABEL "com.github.actions.description"="Github Action that runs Redocly OpenAPI Lint."
