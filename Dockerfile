@@ -1,11 +1,11 @@
-FROM node:17.7.1-alpine3.15
+FROM node:21-alpine3.18
 
 LABEL "com.github.actions.name"="Redocly OpenAPI Lint Github Action"
 LABEL "com.github.actions.description"="Github Action that runs Redocly OpenAPI Lint."
 LABEL "com.github.actions.icon"="box"
 LABEL "com.github.actions.color"="green"
 
-RUN ["npm", "install", "-g", "@redocly/openapi-cli@1.0.0-beta.88"]
+RUN ["npm", "install", "-g", "@redocly/cli@1.9.0"]
 
 COPY LICENSE README.md /
 

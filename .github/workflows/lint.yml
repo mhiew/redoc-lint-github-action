@@ -8,7 +8,7 @@ jobs:
     name: redocly openapi lint
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: lint
         uses: ./ # run as private action

@@ -23,10 +23,10 @@ jobs:
     name: Test
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: openapi-lint 
-        uses: mhiew/redoc-lint-github-action@v3
+        uses: mhiew/redoc-lint-github-action@v4
         with:
           args: 'test/petstore.yml'
 ```

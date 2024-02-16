@@ -1,5 +1,10 @@
 Change Log
 ==========
+
+Version 4 *(2024-02-15)
+* Bump the Node Alpine Version to (21-alpine.3.18) OpenAPI CLI Version to (1.9.0) 
+----------------------------
+
 Version 3 *(2022-03-18)*
 * Bump the Node Alpine Version to (17.7.1-alpine3.15) OpenAPI CLI Version to (1.0.0-beta.88) (thanks to bbrks)
 
